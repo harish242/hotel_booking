@@ -5,14 +5,14 @@ import {auth} from '../firebase'
 import {useEffect} from 'react'
 
 const LayOut = (props) => {
-    const navigate=useNavigate()
-    useEffect(()=>{
-        auth.onAuthStateChanged((user)=>{
-           if(!user){
-            navigate('/')
-           }
-        })
-    },[])
+    // const navigate=useNavigate()
+    // useEffect(()=>{
+    //     auth.onAuthStateChanged((user)=>{
+    //        if(!user){
+    //         navigate('/')
+    //        }
+    //     })
+    // },[])
   return (
     <>
     <NavBar/>
